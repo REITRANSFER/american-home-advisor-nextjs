@@ -1,8 +1,8 @@
 'use client';
 
 import { createContext, useContext, useState, useCallback } from 'react';
-import { captureUTMParams } from '@/lib/tracking';
-import { submitFormData } from '@/lib/submitForm';
+import { captureUTMParams } from '../lib/tracking';
+import { submitFormData } from '../lib/submitForm';
 import { useRouter } from 'next/navigation';
 
 const SurveyContext = createContext(null);

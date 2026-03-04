@@ -1,11 +1,11 @@
 'use client';
 
-import { SurveyProvider, useSurvey } from '@/context/SurveyContext';
-import { pageConfigs } from '@/lib/surveyConfig';
-import SurveyModal from '@/components/SurveyModal/SurveyModal';
-import SurveyCard from '@/components/SurveyCard/SurveyCard';
-import VSLSection from '@/components/VSLSection/VSLSection';
-import FooterLinks from '@/components/FooterLinks/FooterLinks';
+import { SurveyProvider, useSurvey } from '../../context/SurveyContext';
+import { pageConfigs } from '../../lib/surveyConfig';
+import SurveyModal from '../../components/SurveyModal/SurveyModal';
+import SurveyCard from '../../components/SurveyCard/SurveyCard';
+import VSLSection from '../../components/VSLSection/VSLSection';
+import FooterLinks from '../../components/FooterLinks/FooterLinks';
 
 function ExpressHomebuyersContent() {
   return (

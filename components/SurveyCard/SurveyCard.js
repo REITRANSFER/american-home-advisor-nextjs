@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { useSurvey } from '@/context/SurveyContext';
-import AddressInput from '@/components/AddressInput/AddressInput';
+import { useSurvey } from '../../context/SurveyContext';
+import AddressInput from '../AddressInput/AddressInput';
 
 export default function SurveyCard() {
   const { openSurvey } = useSurvey();

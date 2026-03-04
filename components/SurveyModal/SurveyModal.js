@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import styles from './SurveyModal.module.css';
-import { useSurvey } from '@/context/SurveyContext';
+import { useSurvey } from '../../context/SurveyContext';
 import AddressStep from './steps/AddressStep';
 import PropertyTypeStep from './steps/PropertyTypeStep';
 import ConditionStep from './steps/ConditionStep';

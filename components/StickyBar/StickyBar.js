@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import styles from './StickyBar.module.css';
-import AddressInput from '@/components/AddressInput/AddressInput';
-import { useSurvey } from '@/context/SurveyContext';
+import AddressInput from '../AddressInput/AddressInput';
+import { useSurvey } from '../../context/SurveyContext';
 
 export default function StickyBar({ triggerElementId = null, scrollThreshold = 300 }) {
   const [visible, setVisible] = useState(false);

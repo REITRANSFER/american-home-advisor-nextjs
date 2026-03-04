@@ -1,7 +1,7 @@
 'use client';
 
-import { useSurvey } from '@/context/SurveyContext';
-import { formatPrice } from '@/lib/validation';
+import { useSurvey } from '../../../context/SurveyContext';
+import { formatPrice } from '../../../lib/validation';
 import styles from '../SurveyModal.module.css';
 
 export default function PriceStep() {

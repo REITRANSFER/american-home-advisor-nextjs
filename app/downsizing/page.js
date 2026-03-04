@@ -1,12 +1,12 @@
 'use client';
 
 /* eslint-disable @next/next/no-img-element */
-import { SurveyProvider, useSurvey } from '@/context/SurveyContext';
-import { pageConfigs } from '@/lib/surveyConfig';
-import SurveyModal from '@/components/SurveyModal/SurveyModal';
-import StickyBar from '@/components/StickyBar/StickyBar';
-import ArticleLayout from '@/components/ArticleLayout/ArticleLayout';
-import articleStyles from '@/components/ArticleLayout/ArticleLayout.module.css';
+import { SurveyProvider, useSurvey } from '../../context/SurveyContext';
+import { pageConfigs } from '../../lib/surveyConfig';
+import SurveyModal from '../../components/SurveyModal/SurveyModal';
+import StickyBar from '../../components/StickyBar/StickyBar';
+import ArticleLayout from '../../components/ArticleLayout/ArticleLayout';
+import articleStyles from '../../components/ArticleLayout/ArticleLayout.module.css';
 import styles from './page.module.css';
 
 function DownsizingContent() {

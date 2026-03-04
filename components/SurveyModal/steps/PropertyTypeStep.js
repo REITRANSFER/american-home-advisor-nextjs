@@ -1,6 +1,6 @@
 'use client';
 
-import { useSurvey } from '@/context/SurveyContext';
+import { useSurvey } from '../../../context/SurveyContext';
 import styles from '../SurveyModal.module.css';
 
 export default function PropertyTypeStep() {

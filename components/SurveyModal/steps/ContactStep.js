@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { useSurvey } from '@/context/SurveyContext';
-import { formatPhone, validateEmail, validatePhone } from '@/lib/validation';
+import { useSurvey } from '../../../context/SurveyContext';
+import { formatPhone, validateEmail, validatePhone } from '../../../lib/validation';
 import styles from '../SurveyModal.module.css';
 
 export default function ContactStep() {

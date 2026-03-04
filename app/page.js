@@ -3,11 +3,11 @@
 import { useState } from 'react';
 /* eslint-disable @next/next/no-img-element */
 import styles from './page.module.css';
-import { SurveyProvider, useSurvey } from '@/context/SurveyContext';
-import { pageConfigs } from '@/lib/surveyConfig';
-import SurveyModal from '@/components/SurveyModal/SurveyModal';
-import StickyBar from '@/components/StickyBar/StickyBar';
-import AddressInput from '@/components/AddressInput/AddressInput';
+import { SurveyProvider, useSurvey } from '../context/SurveyContext';
+import { pageConfigs } from '../lib/surveyConfig';
+import SurveyModal from '../components/SurveyModal/SurveyModal';
+import StickyBar from '../components/StickyBar/StickyBar';
+import AddressInput from '../components/AddressInput/AddressInput';
 
 function HomeContent() {
   const { openSurvey } = useSurvey();

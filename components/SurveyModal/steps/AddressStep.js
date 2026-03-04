@@ -1,7 +1,7 @@
 'use client';
 
-import { useSurvey } from '@/context/SurveyContext';
-import AddressInput from '@/components/AddressInput/AddressInput';
+import { useSurvey } from '../../../context/SurveyContext';
+import AddressInput from '../../AddressInput/AddressInput';
 import styles from '../SurveyModal.module.css';
 
 export default function AddressStep() {

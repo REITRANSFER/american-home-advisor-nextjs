@@ -1,5 +1,5 @@
 import './globals.css';
-import FacebookPixel from '@/components/FacebookPixel/FacebookPixel';
+import FacebookPixel from '../components/FacebookPixel/FacebookPixel';
 
 export const metadata = {
   title: 'American Home Advisor',
