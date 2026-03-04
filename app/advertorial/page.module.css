@@ -1,0 +1,10 @@
+.imageWrap {
+  margin: 32px 0;
+}
+
+.lead {
+  font-size: 21px;
+  line-height: 1.7;
+  font-weight: 500;
+  font-family: var(--font-serif);
+}
