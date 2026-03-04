@@ -15,13 +15,16 @@ export default function AddressInput({
 }) {
   const inputRef = useRef(null);
   const autocompleteRef = useRef(null);
+  const onChangeRef = useRef(onChange);
+  const onAddressSelectRef = useRef(onAddressSelect);
+
+  useEffect(() => {
+    onChangeRef.current = onChange;
+    onAddressSelectRef.current = onAddressSelect;
+  });
 
   useEffect(() => {
     if (typeof window === 'undefined' || !window.google?.maps?.places) return;
-    initAutocomplete();
-  }, []);
-
-  function initAutocomplete() {
     if (!inputRef.current || autocompleteRef.current) return;
     const ac = new window.google.maps.places.Autocomplete(inputRef.current, {
       types: ['address'],
@@ -31,12 +34,12 @@ export default function AddressInput({
     ac.addListener('place_changed', () => {
       const place = ac.getPlace();
       if (place?.formatted_address) {
-        if (onChange) onChange(place.formatted_address);
-        if (onAddressSelect) onAddressSelect(place.formatted_address);
+        if (onChangeRef.current) onChangeRef.current(place.formatted_address);
+        if (onAddressSelectRef.current) onAddressSelectRef.current(place.formatted_address);
       }
     });
     autocompleteRef.current = ac;
-  }
+  }, []);
 
   return (
     <>

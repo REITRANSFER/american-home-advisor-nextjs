@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import { createContext, useContext, useState, useCallback } from 'react';
 import { captureUTMParams } from '@/lib/tracking';
 import { submitFormData } from '@/lib/submitForm';
 import { useRouter } from 'next/navigation';
@@ -15,11 +15,7 @@ export function SurveyProvider({ config, children }) {
   const [formData, setFormData] = useState({});
   const [addressValidated, setAddressValidated] = useState({});
   const [status, setStatus] = useState('idle'); // idle | submitting | success | disqualified
-  const [trackingData, setTrackingData] = useState({});
-
-  useEffect(() => {
-    setTrackingData(captureUTMParams());
-  }, []);
+  const [trackingData] = useState(() => captureUTMParams());
 
   const currentStepName = stepOrder[currentStepIndex];
   const progressPercent = status === 'success' || status === 'disqualified'
