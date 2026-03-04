@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import { SurveyProvider, useSurvey } from '@/context/SurveyContext';
 import { pageConfigs } from '@/lib/surveyConfig';
 import SurveyModal from '@/components/SurveyModal/SurveyModal';
@@ -22,7 +22,7 @@ function MedicalFinancialContent() {
         <div className={articleStyles.byline}>By <strong>Joe Estefan</strong> | Owner &amp; CEO, American Home Advisor<br />February 18, 2026 | 7-minute read</div>
 
         <div className={articleStyles.authorBox}>
-          <Image src="/images/headshot.jpeg" alt="Joe Estefan" width={90} height={90} className={articleStyles.authorPhoto} />
+          <img src="/images/headshot.jpeg" alt="Joe Estefan" width={90} height={90} className={articleStyles.authorPhoto} />
           <div>
             <h3 className={articleStyles.authorName}>Joe Estefan</h3>
             <p className={articleStyles.authorBio}>Owner &amp; CEO of American Home Advisor. Buying homes in Baltimore Maryland and Surrounding Areas since 2018. Father, husband, and advocate for fair home buying practices.</p>
@@ -30,7 +30,7 @@ function MedicalFinancialContent() {
         </div>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/medical-debt.jpeg" alt="100 Million Americans Carry Medical Debt" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/medical-debt.jpeg" alt="100 Million Americans Carry Medical Debt" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <p className={styles.lead}>I get a lot of calls that stay with me. This is one of the types that never gets easier.</p>
@@ -93,7 +93,7 @@ function MedicalFinancialContent() {
         </div>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/medical-debt-crisis.png" alt="The Medical Debt Crisis - Statistics" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/medical-debt-crisis.png" alt="The Medical Debt Crisis - Statistics" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <h2>The Question I Get: &quot;Won&apos;t I Lose Money Versus Listing Traditionally?&quot;</h2>
@@ -145,7 +145,7 @@ function MedicalFinancialContent() {
         </ul>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/know-options.jpeg" alt="Know Your Options Before You Sell" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/know-options.jpeg" alt="Know Your Options Before You Sell" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <div className={articleStyles.ctaBox}>

@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import { SurveyProvider, useSurvey } from '@/context/SurveyContext';
 import { pageConfigs } from '@/lib/surveyConfig';
 import SurveyModal from '@/components/SurveyModal/SurveyModal';
@@ -30,7 +30,7 @@ function AdvertorialContent() {
         <p>Seventy-two hours later, that hope evaporated.</p>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/handshake.jpeg" alt="Joe Estefan with homeowner" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/handshake.jpeg" alt="Joe Estefan with homeowner" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
           <p style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', fontSize: '14px', color: '#666', fontStyle: 'italic', marginBottom: '30px' }}>Joe Estefan of American Home Advisor with Michael Torres after helping him close on his Baltimore home. No price drops, no surprises. Photo: Sarah Mitchell</p>
         </div>
 
@@ -87,7 +87,7 @@ function AdvertorialContent() {
 
         <div className={styles.imageWrap}>
           <p style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px', color: '#667eea', fontWeight: '700', marginBottom: '10px' }}>CONSUMER ALERT</p>
-          <Image src="/images/predatory-warning.jpeg" alt="5 Warning Signs of a Predatory Cash Buyer" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/predatory-warning.jpeg" alt="5 Warning Signs of a Predatory Cash Buyer" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <h2>The Company That Does It Differently</h2>
@@ -132,7 +132,7 @@ function AdvertorialContent() {
         </div>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/know-options.jpeg" alt="Know Your Options Before You Sell" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/know-options.jpeg" alt="Know Your Options Before You Sell" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <h2>The Bottom Line</h2>

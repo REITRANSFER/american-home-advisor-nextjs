@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import { SurveyProvider, useSurvey } from '@/context/SurveyContext';
 import { pageConfigs } from '@/lib/surveyConfig';
 import SurveyModal from '@/components/SurveyModal/SurveyModal';
@@ -22,7 +22,7 @@ function JobLossContent() {
         <div className={articleStyles.byline}>By <strong>Joe Estefan</strong> | American Home Advisor<br />February 21, 2026 | 7-minute read</div>
 
         <div className={articleStyles.authorBox}>
-          <Image src="/images/headshot.jpeg" alt="Joe Estefan" width={90} height={90} className={articleStyles.authorPhoto} />
+          <img src="/images/headshot.jpeg" alt="Joe Estefan" width={90} height={90} className={articleStyles.authorPhoto} />
           <div>
             <h3 className={articleStyles.authorName}>Joe Estefan</h3>
             <p className={articleStyles.authorBio}>Founder of American Home Advisor. Has helped hundreds of homeowners sell fast during job loss, relocation, and financial hardship. Believes in honest numbers and straight talk.</p>
@@ -30,7 +30,7 @@ function JobLossContent() {
         </div>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/job-loss-mortgage.jpeg" alt="Job Loss and Your Mortgage - The Numbers" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/job-loss-mortgage.jpeg" alt="Job Loss and Your Mortgage - The Numbers" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <p className={styles.lead}>The moment you lose your job, a clock starts ticking. Not a metaphorical clock. A real one. Measured in mortgage payments you can no longer afford.</p>
@@ -125,7 +125,7 @@ function JobLossContent() {
         <p>Natalie and Chris closed in 16 days. They drove to the new city with money in the bank, no mortgage hanging over them, and Chris started his new job on time. Natalie found a full-time teaching position that fall.</p>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/trad-vs-cash.jpeg" alt="Traditional Sale vs Cash Sale comparison" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/trad-vs-cash.jpeg" alt="Traditional Sale vs Cash Sale comparison" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <div className={articleStyles.testimonial}>
@@ -159,7 +159,7 @@ function JobLossContent() {
         <p>That&apos;s the gap we fill. Speed and certainty when the traditional process is too slow and too uncertain for what you&apos;re dealing with.</p>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/cash-offer-checklist.jpeg" alt="Before You Accept ANY Cash Offer - Use This Checklist" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/cash-offer-checklist.jpeg" alt="Before You Accept ANY Cash Offer - Use This Checklist" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <div className={articleStyles.ctaBox}>

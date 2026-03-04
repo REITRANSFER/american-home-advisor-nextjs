@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import styles from './page.module.css';
 import { SurveyProvider, useSurvey } from '@/context/SurveyContext';
 import { pageConfigs } from '@/lib/surveyConfig';
@@ -32,7 +32,7 @@ function HomeContent() {
 
         {/* Main Image */}
         <div className={styles.imageWrap}>
-          <Image src="/images/handshake.jpeg" alt="Joe Estefan with homeowners" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/handshake.jpeg" alt="Joe Estefan with homeowners" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         {/* TOP CTA */}
@@ -100,7 +100,7 @@ function HomeContent() {
 
         {/* AUTHORITY */}
         <div className={styles.authorityBox}>
-          <Image src="/images/headshot.jpeg" alt="Joe Estefan" width={90} height={90} style={{ borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }} />
+          <img src="/images/headshot.jpeg" alt="Joe Estefan" width={90} height={90} style={{ borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }} />
           <div className={styles.authorityContent}>
             <h3>About Joe Estefan</h3>
             <p>Owner &amp; CEO of American Home Advisor. 8+ years buying homes in the Baltimore Maryland and Surrounding Areas. 450+ properties purchased. Licensed and insured. Advocate for honest home buying practices.</p>
@@ -124,7 +124,7 @@ function HomeContent() {
         </div>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/cash-sales-2025.jpeg" alt="32% of home purchases were cash sales in 2025" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/cash-sales-2025.jpeg" alt="32% of home purchases were cash sales in 2025" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <h2>How American Home Advisor Does It Differently</h2>
@@ -161,7 +161,7 @@ function HomeContent() {
         </div>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/trad-vs-cash.jpeg" alt="Traditional Sale vs Cash Sale comparison" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/trad-vs-cash.jpeg" alt="Traditional Sale vs Cash Sale comparison" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <h2>Zero Risk. Zero Obligation. Zero Pressure.</h2>

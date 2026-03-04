@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import { SurveyProvider, useSurvey } from '@/context/SurveyContext';
 import { pageConfigs } from '@/lib/surveyConfig';
 import SurveyModal from '@/components/SurveyModal/SurveyModal';
@@ -22,7 +22,7 @@ function PreForeclosureContent() {
         <div className={articleStyles.byline}>By <strong>Joe Estefan</strong> | Owner &amp; CEO, American Home Advisor<br />February 18, 2026 | 7-minute read</div>
 
         <div className={articleStyles.authorBox}>
-          <Image src="/images/headshot.jpeg" alt="Joe Estefan" width={90} height={90} className={articleStyles.authorPhoto} />
+          <img src="/images/headshot.jpeg" alt="Joe Estefan" width={90} height={90} className={articleStyles.authorPhoto} />
           <div>
             <h3 className={articleStyles.authorName}>Joe Estefan</h3>
             <p className={articleStyles.authorBio}>Owner &amp; CEO of American Home Advisor. Buying homes in the Baltimore Maryland and Surrounding Areas area since 2018. Father, husband, and advocate for fair home buying practices.</p>
@@ -30,7 +30,7 @@ function PreForeclosureContent() {
         </div>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/foreclosure-filings.jpeg" alt="Foreclosure Filings Have Nearly Tripled Since 2021" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/foreclosure-filings.jpeg" alt="Foreclosure Filings Have Nearly Tripled Since 2021" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <p className={styles.lead}>If you&apos;re behind on your mortgage and you haven&apos;t called your lender back in weeks, I&apos;m not here to judge you. I&apos;m here to tell you something nobody else will.</p>
@@ -93,7 +93,7 @@ function PreForeclosureContent() {
         </div>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/foreclosure-timeline.jpeg" alt="The Foreclosure Timeline - Know Your Window" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/foreclosure-timeline.jpeg" alt="The Foreclosure Timeline - Know Your Window" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <h2>A Family We Worked With Last Spring</h2>
@@ -167,7 +167,7 @@ function PreForeclosureContent() {
         <p>If the answer is no, or even &quot;probably not&quot;, then every day you wait costs you real money. And I&apos;d rather you hear that from me now than figure it out at month 7 when there&apos;s nothing left to protect.</p>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/selling-before-foreclosure.jpeg" alt="Selling Before Foreclosure preserves equity" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/selling-before-foreclosure.jpeg" alt="Selling Before Foreclosure preserves equity" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <div className={articleStyles.ctaBox}>

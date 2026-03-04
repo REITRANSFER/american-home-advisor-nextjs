@@ -1,8 +1,21 @@
 'use client';
 
 import { useEffect, useRef, useCallback } from 'react';
-import Script from 'next/script';
 import styles from './AddressInput.module.css';
+
+let mapsLoading = false;
+let mapsLoaded = false;
+
+function loadGoogleMaps() {
+  if (mapsLoaded || mapsLoading) return;
+  mapsLoading = true;
+  const script = document.createElement('script');
+  script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCDtN-QzZ8zcoKOhxQLD4HKcWEiY39Xqcs&libraries=places';
+  script.async = true;
+  script.onload = () => { mapsLoaded = true; };
+  script.onerror = () => { mapsLoading = false; };
+  document.head.appendChild(script);
+}
 
 export default function AddressInput({
   id,
@@ -42,26 +55,32 @@ export default function AddressInput({
   }, []);
 
   useEffect(() => {
-    initAutocomplete();
+    try {
+      loadGoogleMaps();
+    } catch (e) {
+      // Google Maps not available (e.g. v0 sandbox)
+    }
+    // Poll briefly for Maps API to be ready
+    const interval = setInterval(() => {
+      if (window.google?.maps?.places) {
+        initAutocomplete();
+        clearInterval(interval);
+      }
+    }, 500);
+    const timeout = setTimeout(() => clearInterval(interval), 10000);
+    return () => { clearInterval(interval); clearTimeout(timeout); };
   }, [initAutocomplete]);
 
   return (
-    <>
-      <Script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDtN-QzZ8zcoKOhxQLD4HKcWEiY39Xqcs&libraries=places"
-        strategy="afterInteractive"
-        onReady={initAutocomplete}
-      />
-      <input
-        ref={inputRef}
-        id={id}
-        type="text"
-        placeholder={placeholder}
-        value={value}
-        onChange={(e) => onChange && onChange(e.target.value)}
-        autoComplete="off"
-        className={inputClassName || className || styles.input}
-      />
-    </>
+    <input
+      ref={inputRef}
+      id={id}
+      type="text"
+      placeholder={placeholder}
+      value={value}
+      onChange={(e) => onChange && onChange(e.target.value)}
+      autoComplete="off"
+      className={inputClassName || className || styles.input}
+    />
   );
 }

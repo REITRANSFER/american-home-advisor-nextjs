@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import { SurveyProvider, useSurvey } from '@/context/SurveyContext';
 import { pageConfigs } from '@/lib/surveyConfig';
 import SurveyModal from '@/components/SurveyModal/SurveyModal';
@@ -22,7 +22,7 @@ function DownsizingContent() {
         <div className={articleStyles.byline}>By <strong>Joe Estefan</strong> | Owner &amp; CEO, American Home Advisor<br />February 21, 2026 | 7-minute read</div>
 
         <div className={articleStyles.authorBox}>
-          <Image src="/images/headshot.jpeg" alt="Joe Estefan" width={90} height={90} className={articleStyles.authorPhoto} />
+          <img src="/images/headshot.jpeg" alt="Joe Estefan" width={90} height={90} className={articleStyles.authorPhoto} />
           <div>
             <h3 className={articleStyles.authorName}>Joe Estefan</h3>
             <p className={articleStyles.authorBio}>Owner &amp; CEO of American Home Advisor. Buying homes in Baltimore Maryland and Surrounding Areas since 2018. Father, husband, and advocate for fair home buying practices.</p>
@@ -30,7 +30,7 @@ function DownsizingContent() {
         </div>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/seniors-downsizing.jpeg" alt="Why Seniors Are Selling - The Downsizing Trend" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/seniors-downsizing.jpeg" alt="Why Seniors Are Selling - The Downsizing Trend" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <p className={styles.lead}>Most people don&apos;t call me because they want to sell their house. They call me because the house they raised their family in, the one they&apos;ve loved for 20 or 30 or 40 years, has quietly become a burden they didn&apos;t expect.</p>
@@ -83,7 +83,7 @@ function DownsizingContent() {
         </div>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/home-equity-retirement.png" alt="Your Home Equity - What It Could Mean For Retirement" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/home-equity-retirement.png" alt="Your Home Equity - What It Could Mean For Retirement" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <h2>Harold and Beverly&apos;s Story</h2>
@@ -131,7 +131,7 @@ function DownsizingContent() {
         <p><strong>Sign 3: Your equity is trapped and you need it for the next stage of life.</strong> You&apos;re sitting on significant home equity, but you can&apos;t touch it without selling. That equity could fund a more comfortable living situation, cover healthcare costs, provide financial security, or simply give you breathing room. Equity that sits in a house isn&apos;t helping your life. Equity in the bank is.</p>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/aging-vs-downsizing.jpeg" alt="Aging in Place vs Downsizing comparison" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/aging-vs-downsizing.jpeg" alt="Aging in Place vs Downsizing comparison" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <h2>When Staying Put Makes More Sense</h2>

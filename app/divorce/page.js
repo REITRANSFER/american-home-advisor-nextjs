@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import { SurveyProvider, useSurvey } from '@/context/SurveyContext';
 import { pageConfigs } from '@/lib/surveyConfig';
 import SurveyModal from '@/components/SurveyModal/SurveyModal';
@@ -22,7 +22,7 @@ function DivorceContent() {
         <div className={articleStyles.byline}>By <strong>Joe Estefan</strong> | Owner &amp; CEO, American Home Advisor<br />February 18, 2026 | 7-minute read</div>
 
         <div className={articleStyles.authorBox}>
-          <Image src="/images/headshot.jpeg" alt="Joe Estefan" width={90} height={90} className={articleStyles.authorPhoto} />
+          <img src="/images/headshot.jpeg" alt="Joe Estefan" width={90} height={90} className={articleStyles.authorPhoto} />
           <div>
             <h3 className={articleStyles.authorName}>Joe Estefan</h3>
             <p className={articleStyles.authorBio}>Owner &amp; CEO of American Home Advisor. Buying homes in Baltimore Maryland and Surrounding Areas since 2018. Father, husband, and advocate for fair home buying practices.</p>
@@ -30,7 +30,7 @@ function DivorceContent() {
         </div>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/divorce-infographic.jpeg" alt="Divorce and The Family Home - Statistics" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/divorce-infographic.jpeg" alt="Divorce and The Family Home - Statistics" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <p className={styles.lead}>Over 9 in this business, I&apos;ve bought homes from people going through every kind of difficult situation. Foreclosure, financial crisis, inherited properties, relocation.</p>
@@ -73,7 +73,7 @@ function DivorceContent() {
         </div>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/trad-vs-cash.jpeg" alt="Traditional Sale vs Cash Sale comparison" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/trad-vs-cash.jpeg" alt="Traditional Sale vs Cash Sale comparison" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <h2>The Numbers That Surprised My Client</h2>
@@ -103,7 +103,7 @@ function DivorceContent() {
         <p>We&apos;re not trying to buy every house. We&apos;re trying to help people who actually need a different solution.</p>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/cash-offer-checklist.jpeg" alt="Before You Accept ANY Cash Offer - Use This Checklist" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/cash-offer-checklist.jpeg" alt="Before You Accept ANY Cash Offer - Use This Checklist" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <div className={articleStyles.ctaBox}>

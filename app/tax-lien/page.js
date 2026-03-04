@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import { SurveyProvider, useSurvey } from '@/context/SurveyContext';
 import { pageConfigs } from '@/lib/surveyConfig';
 import SurveyModal from '@/components/SurveyModal/SurveyModal';
@@ -22,7 +22,7 @@ function TaxLienContent() {
         <div className={articleStyles.byline}>By <strong>Joe Estefan</strong> | Owner &amp; CEO, American Home Advisor<br />February 18, 2026 | 6-minute read</div>
 
         <div className={articleStyles.authorBox}>
-          <Image src="/images/headshot.jpeg" alt="Joe Estefan" width={90} height={90} className={articleStyles.authorPhoto} />
+          <img src="/images/headshot.jpeg" alt="Joe Estefan" width={90} height={90} className={articleStyles.authorPhoto} />
           <div>
             <h3 className={articleStyles.authorName}>Joe Estefan</h3>
             <p className={articleStyles.authorBio}>Owner &amp; CEO of American Home Advisor. Buying homes in the Baltimore Maryland and Surrounding Areas area since 2018. Father, husband, and advocate for fair home buying practices.</p>
@@ -30,7 +30,7 @@ function TaxLienContent() {
         </div>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/tax-liens-america.jpeg" alt="Property Tax Liens in America" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/tax-liens-america.jpeg" alt="Property Tax Liens in America" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <p className={styles.lead}>I want to tell you something that surprises almost every homeowner I say it to: you can lose your house to property tax debt even if you have no mortgage. Even if you own it free and clear.</p>
@@ -85,7 +85,7 @@ function TaxLienContent() {
         </div>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/tax-lien-options.jpeg" alt="Your Options When Facing a Tax Lien" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/tax-lien-options.jpeg" alt="Your Options When Facing a Tax Lien" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <h2>The Option You Probably Don&apos;t Know About</h2>
@@ -143,7 +143,7 @@ function TaxLienContent() {
         <p>The key question to ask yourself: <em>Can I come up with this money in the next 60-90 days?</em> If yes, do it. If no, then every month you wait is money walking out the door.</p>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/predatory-warning.jpeg" alt="5 Warning Signs of a Predatory Cash Buyer" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/predatory-warning.jpeg" alt="5 Warning Signs of a Predatory Cash Buyer" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <div className={articleStyles.ctaBox}>

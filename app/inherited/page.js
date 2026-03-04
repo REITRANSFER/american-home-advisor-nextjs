@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import { SurveyProvider, useSurvey } from '@/context/SurveyContext';
 import { pageConfigs } from '@/lib/surveyConfig';
 import SurveyModal from '@/components/SurveyModal/SurveyModal';
@@ -22,7 +22,7 @@ function InheritedContent() {
         <div className={articleStyles.byline}>By <strong>Joe Estefan</strong> | Owner &amp; CEO, American Home Advisor<br />February 20, 2026 | 7-minute read</div>
 
         <div className={articleStyles.authorBox}>
-          <Image src="/images/headshot.jpeg" alt="Joe Estefan" width={90} height={90} className={articleStyles.authorPhoto} />
+          <img src="/images/headshot.jpeg" alt="Joe Estefan" width={90} height={90} className={articleStyles.authorPhoto} />
           <div>
             <h3 className={articleStyles.authorName}>Joe Estefan</h3>
             <p className={articleStyles.authorBio}>Owner &amp; CEO of American Home Advisor. Buying homes in Baltimore Maryland and Surrounding Areas since 2018. Father, husband, and advocate for fair home buying practices.</p>
@@ -30,7 +30,7 @@ function InheritedContent() {
         </div>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/inherited-homes.jpeg" alt="Inherited Homes in America - Statistics" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/inherited-homes.jpeg" alt="Inherited Homes in America - Statistics" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <p className={styles.lead}>Inheriting a home is supposed to be a blessing. Your parent or grandparent worked their entire life to own that house, and they left it to you because they loved you and wanted you to have something of value.</p>
@@ -78,7 +78,7 @@ function InheritedContent() {
         </div>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/probate-process.jpeg" alt="The Probate Process - What Most Heirs Don't Know" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/probate-process.jpeg" alt="The Probate Process - What Most Heirs Don't Know" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <h2>The Numbers That Made Marcus&apos;s Decision Easy</h2>
@@ -123,7 +123,7 @@ function InheritedContent() {
         <p>If that&apos;s you, we can help. If it&apos;s not, I&apos;ll tell you that too.</p>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/inherited-holding-cost.jpeg" alt="The Hidden Cost of Holding an Inherited Property" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/inherited-holding-cost.jpeg" alt="The Hidden Cost of Holding an Inherited Property" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <div className={articleStyles.ctaBox}>

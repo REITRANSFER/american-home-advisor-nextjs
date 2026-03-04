@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import { SurveyProvider, useSurvey } from '@/context/SurveyContext';
 import { pageConfigs } from '@/lib/surveyConfig';
 import SurveyModal from '@/components/SurveyModal/SurveyModal';
@@ -22,7 +22,7 @@ function TiredLandlordContent() {
         <div className={articleStyles.byline}>By <strong>Joe Estefan</strong> | Owner &amp; CEO, American Home Advisor<br />February 21, 2026 | 7-minute read</div>
 
         <div className={articleStyles.authorBox}>
-          <Image src="/images/headshot.jpeg" alt="Joe Estefan" width={90} height={90} className={articleStyles.authorPhoto} />
+          <img src="/images/headshot.jpeg" alt="Joe Estefan" width={90} height={90} className={articleStyles.authorPhoto} />
           <div>
             <h3 className={articleStyles.authorName}>Joe Estefan</h3>
             <p className={articleStyles.authorBio}>Owner &amp; CEO of American Home Advisor. Has purchased 450+ homes from owners in every situation imaginable. Advocate for honest, no-pressure home buying.</p>
@@ -30,7 +30,7 @@ function TiredLandlordContent() {
         </div>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/landlord-reality.jpeg" alt="The Reality of Being a Landlord in 2026" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/landlord-reality.jpeg" alt="The Reality of Being a Landlord in 2026" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <p className={styles.lead}>Somewhere around 2016, the internet decided that buying rental property was a guaranteed path to financial freedom. The YouTube gurus made it look easy. Buy a duplex. Rent both units. Collect checks. Retire early.</p>
@@ -144,7 +144,7 @@ function TiredLandlordContent() {
         <p>That&apos;s when Ray called us.</p>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/selling-rental-options.jpeg" alt="Selling a Rental Property - Your Options" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/selling-rental-options.jpeg" alt="Selling a Rental Property - Your Options" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <div className={articleStyles.testimonial}>
@@ -181,7 +181,7 @@ function TiredLandlordContent() {
         <p>That&apos;s tens of thousands more per year than the duplex was generating.</p>
 
         <div className={styles.imageWrap}>
-          <Image src="/images/inspection-trick.jpeg" alt="The Inspection Trick - How Dishonest Buyers Steal Your Equity" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+          <img src="/images/inspection-trick.jpeg" alt="The Inspection Trick - How Dishonest Buyers Steal Your Equity" width={680} height={400} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
         </div>
 
         <div className={articleStyles.ctaWrapper}>
