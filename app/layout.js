@@ -1,5 +1,6 @@
 import './globals.css';
 import FacebookPixel from '@/components/FacebookPixel/FacebookPixel';
+/* Path alias rebuild trigger */
 
 export const metadata = {
   title: 'American Home Advisor',
