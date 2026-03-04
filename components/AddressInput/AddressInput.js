@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useCallback } from 'react';
 import Script from 'next/script';
 import styles from './AddressInput.module.css';
 
@@ -23,7 +23,7 @@ export default function AddressInput({
     onAddressSelectRef.current = onAddressSelect;
   });
 
-  useEffect(() => {
+  const initAutocomplete = useCallback(() => {
     if (typeof window === 'undefined' || !window.google?.maps?.places) return;
     if (!inputRef.current || autocompleteRef.current) return;
     const ac = new window.google.maps.places.Autocomplete(inputRef.current, {
@@ -40,6 +40,10 @@ export default function AddressInput({
     });
     autocompleteRef.current = ac;
   }, []);
+
+  useEffect(() => {
+    initAutocomplete();
+  }, [initAutocomplete]);
 
   return (
     <>
