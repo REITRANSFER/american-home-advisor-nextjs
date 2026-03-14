@@ -19,7 +19,7 @@ export default function PropertyTypeStep() {
         <button className={styles.optionButton} onClick={() => selectOption('propertyType', 'Multi-Family')}>
           &#127960; Multi-Family (2-4 units)
         </button>
-        <button className={styles.optionButton} onClick={() => selectOption('propertyType', 'Condo/Townhouse')}>
+        <button className={styles.optionButton} onClick={() => disqualify('propertyType', 'Condo/Townhouse')}>
           &#127970; Condo or Townhouse
         </button>
         <button className={styles.optionButton} onClick={() => disqualify('propertyType', 'Land/Commercial/Mobile')}>
